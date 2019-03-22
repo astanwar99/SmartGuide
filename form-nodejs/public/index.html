@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/post-feedback">
+        <label>Budget:<input type="number" name="client-budget" required></label>
+        <br>
+        <label>Destination:<input type="text" name="client-destination" required></label>
+        <br>
+        <label>Mode Of Travel:<input type="text" name="client-mode" required></label>
+        <br>
+        <label>Destination-Specification:<br><textarea name="specification"></textarea></label>
+        <br>
+        <label>Duration: <input type="number" name="client-duration" required></label>
+        <br>
+        <label>Age:<input type="Age" name="client-Age" required></label>
+        <br>
+        <label>Quarter:<input type="Date" name="client-Date" required></label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/view-feedbacks">View feedbacks</a>
+</body>
+</html>
