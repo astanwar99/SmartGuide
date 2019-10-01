@@ -1,11 +1,11 @@
-var express = require('express');
-var path = require('path');
-var bodyParser = require('body-parser');
-var mongodb = require('mongodb');
+let express = require('express');
+let path = require('path');
+let bodyParser = require('body-parser');
+let mongodb = require('mongodb');
 
-var dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017');
+let dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017');
 
-var app = express();
+let app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname, 'public')));
