@@ -2,7 +2,8 @@ let express = require('express');
 let path = require('path');
 let bodyParser = require('body-parser');
 let mongodb = require('mongodb');
-
+const hostname = 'localhost';
+const port = 8080;
 let dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017');
 
 let app = express();
@@ -26,4 +27,4 @@ app.get('/view-feedbacks',  function(req, res) {
     });
 });
 
-app.listen(process.env.PORT || 8080, process.env.IP || '0.0.0.0' );
+app.listen(process.env.PORT || ${port}, process.env.IP || '0.0.0.0' );
